@@ -1,6 +1,9 @@
-//
-// Created by tperka on 29.04.19.
-//
+/**
+ * Autor: Tymoteusz Perka
+ * Nr indeksu: 300243
+ * Prowadzący: mgr Wiktor Kuśmirek
+ * Projekt: 9. Symulacja teatru
+**/
 
 #ifndef THEATER_PERFORMANCE_H
 #define THEATER_PERFORMANCE_H
@@ -151,7 +154,8 @@ inline void Performance<unsigned char>::loadPerformanceFromUser()
 template<class T>
 void Performance<T>::showHall()
 {
-    std::cout << "Ekran znajduje się po lewej stronie." << std::endl;
+    std::cout << "Ekran znajduje się po lewej stronie." << std::endl
+    <<"O- wolne, X- zajęte" << std::endl;
     std::cout << "   ";
     for (unsigned int i = 0; i < hallPlan.size(); i++) 
         std::cout << std::setw(3) << i+1;

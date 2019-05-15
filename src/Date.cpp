@@ -1,6 +1,9 @@
-//
-// Created by tperka on 29.04.19.
-//
+/**
+ * Autor: Tymoteusz Perka
+ * Nr indeksu: 300243
+ * Prowadzący: mgr Wiktor Kuśmirek
+ * Projekt: 9. Symulacja teatru
+**/
 
 #include "Date.hpp"
 #include "Input.hpp"

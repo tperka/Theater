@@ -1,6 +1,9 @@
-//
-// Created by tperka on 07.05.19.
-//
+/**
+ * Autor: Tymoteusz Perka
+ * Nr indeksu: 300243
+ * Prowadzący: mgr Wiktor Kuśmirek
+ * Projekt: 9. Symulacja teatru
+**/
 
 #ifndef THEATER_THEATHER_HPP
 #define THEATER_THEATHER_HPP
@@ -10,7 +13,7 @@
 #include "Ticket.hpp"
 #include <functional>
 
-class Theather {
+class Theater {
     Performance<unsigned char>* smallPerformances;
     int numberOfSmall;
     int numberOfBig;
@@ -20,8 +23,8 @@ class Theather {
     void showPerformances();
     void showPerformances(int h);
 public:
-    Theather();
-    ~Theather();
+    Theater();
+    ~Theater();
  
     void menu();
 };

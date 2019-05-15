@@ -1,13 +1,16 @@
-//
-// Created by tperka on 07.05.19.
-//
+/**
+ * Autor: Tymoteusz Perka
+ * Nr indeksu: 300243
+ * Prowadzący: mgr Wiktor Kuśmirek
+ * Projekt: 9. Symulacja teatru
+**/
 
 #include <algorithm>
-#include "Theather.hpp"
+#include "Theater.hpp"
 #include "Input.hpp"
 using namespace std;
 
-Theather::Theather()
+Theater::Theater()
 {
     smallPerformances = new Performance<unsigned char>[3];
     bigPerformances = new Performance<unsigned short int>[3];
@@ -36,7 +39,7 @@ Theather::Theather()
 
 
 
-void Theather::showPerformances()
+void Theater::showPerformances()
 {
     cout << setw(20)<< "\tTytuł\tCzas trwania\tData\t\tGodzina\tSala\tPozostało biletów" << endl;
     for(int i = 0; i < numberOfSmall; ++i)
@@ -44,8 +47,8 @@ void Theather::showPerformances()
     for(int i = 0; i < numberOfBig; ++i)
         cout <<setw(20)<< bigPerformances[i];
 }
-void Theather::showPerformances(int h) {
-   cout << setw(20) <<  "\tTytuł\tCzas trwania\tData\t\tGodzina\tSala\tPozostało biletów" << endl;
+void Theater::showPerformances(int h) {
+   cout << setw(20) <<  "\t  Tytuł\t  Czas trwania\tData\t\tGodzina\tSala\tPozostało biletów" << endl;
     if (h == 1) {
         for (int i = 0; i < numberOfSmall; ++i)
             cout << i+1 <<". "<<setw(20)<< smallPerformances[i];
@@ -57,13 +60,13 @@ void Theather::showPerformances(int h) {
     }
 }
 
-Theather::~Theather()
+Theater::~Theater()
 {
     delete [] smallPerformances;
     delete [] bigPerformances;
 }
 
-void Theather::addPerformance()
+void Theater::addPerformance()
 {
     cout << "W której sali będzię odbywać się spektakl?" << endl;
     string input;
@@ -98,7 +101,7 @@ void Theather::addPerformance()
     }
 }
 
-void Theather::menu()
+void Theater::menu()
 {
     int ans = 0;
     do
