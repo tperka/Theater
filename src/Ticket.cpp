@@ -8,6 +8,7 @@
 #include "Input.hpp"
 
 #include <limits>
+#include <iostream>
 
 using namespace std;
 
@@ -40,4 +41,11 @@ int* Ticket::getSeat()
     seat[0] = row;
     seat[1] = column;
     return seat;
+}
+
+
+std::ostream& operator<<(std::ostream& os, const Ticket& tick)
+{
+        os<<tick.name << "\t" << tick.row + 1 <<"\t"<< tick.column + 1 <<std::endl;
+        return os;
 }

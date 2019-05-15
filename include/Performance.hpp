@@ -15,6 +15,7 @@
 #include <vector>
 #include <limits>
 #include <iomanip>
+#include <iostream>
 
 template <class T = unsigned short int>
 class Performance {

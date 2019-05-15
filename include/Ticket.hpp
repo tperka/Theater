@@ -10,7 +10,7 @@
 
 
 #include <string>
-#include <iostream>
+
 
 class Ticket {
     std::string name;
@@ -21,18 +21,14 @@ public:
     : name(n), row(r), column(c)
     {}
 
-    friend std::ostream& operator<<(std::ostream& os, const Ticket& tick)
-    {
-        os<<tick.name << "\t" << tick.row + 1 <<"\t"<< tick.column + 1 <<std::endl;
-        return os;
-    }
+    friend std::ostream& operator<<(std::ostream& os, const Ticket& tick);
 
     void setTicket(int maxrow, int maxcol);
     int* getSeat();
 
 };
 
-
+std::ostream& operator<<(std::ostream& os, const Ticket& tick);
 
 
 #endif //THEATER_TICKET_HPP
