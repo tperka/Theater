@@ -21,7 +21,6 @@ $(BUILDDIR)/%.o: $(SRCDIR)/%.$(SRCEXT)
 
 clean:
 	@echo " Cleaning..."; 
-	@rm -r $(BINDIR)
-	@echo " $(RM) -r $(BUILDDIR)"; $(RM) -r $(BUILDDIR)
+	@echo " $(RM) -r $(BUILDDIR) $(BINDIR)"; $(RM) -r $(BUILDDIR) $(BINDIR)
 
 .PHONY: clean
