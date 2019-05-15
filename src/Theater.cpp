@@ -5,14 +5,17 @@
  * Projekt: 9. Symulacja teatru
 **/
 
-#include <algorithm>
+
 #include "Theater.hpp"
+
+#include <algorithm>
+#include <functional>
 using namespace std;
 
 Theater::Theater()
 {
-    smallPerformances = new Performance<unsigned char>[3];
-    bigPerformances = new Performance<unsigned short int>[3];
+    smallPerformances = new Performance<unsigned char>[2];
+    bigPerformances = new Performance<unsigned short int>[2];
     numberOfSmall = numberOfBig = 2;
     Performance<unsigned char> pib(1,"Piękna i Bestia", 150, 150);
     Date PiB("22","08","2019","14","20");

@@ -10,7 +10,6 @@
 
 
 #include "Performance.hpp"
-#include <functional>
 
 class Theater {
     Performance<unsigned char>* smallPerformances;

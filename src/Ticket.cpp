@@ -5,6 +5,9 @@
  * Projekt: 9. Symulacja teatru
 **/
 #include "Ticket.hpp"
+#include "Input.hpp"
+
+#include <limits>
 
 using namespace std;
 

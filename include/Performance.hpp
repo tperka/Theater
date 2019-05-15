@@ -10,7 +10,8 @@
 
 #include "Date.hpp"
 #include "Ticket.hpp"
-#include <iostream>
+#include "Input.hpp"
+
 #include <vector>
 #include <limits>
 #include <iomanip>

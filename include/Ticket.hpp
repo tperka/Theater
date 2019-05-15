@@ -8,17 +8,16 @@
 #ifndef THEATER_TICKET_HPP
 #define THEATER_TICKET_HPP
 
-#include <vector>
-#include "Input.hpp"
+
+#include <string>
 #include <iostream>
-#include <limits>
 
 class Ticket {
     std::string name;
     int row;
     int column;
 public:
-    Ticket(std::string n = " ", unsigned char r = 0, unsigned char c = 0)
+    Ticket(std::string n = " ", int r = 0, int c = 0)
     : name(n), row(r), column(c)
     {}
 
