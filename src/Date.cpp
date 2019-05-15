@@ -6,7 +6,6 @@
 **/
 
 #include "Date.hpp"
-#include "Input.hpp"
 
 using namespace std;
 

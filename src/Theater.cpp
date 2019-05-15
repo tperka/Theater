@@ -7,7 +7,6 @@
 
 #include <algorithm>
 #include "Theater.hpp"
-#include "Input.hpp"
 using namespace std;
 
 Theater::Theater()

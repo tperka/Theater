@@ -9,7 +9,6 @@
 #define THEATER_PERFORMANCE_H
 
 #include "Date.hpp"
-#include "Input.hpp"
 #include "Ticket.hpp"
 #include <iostream>
 #include <vector>

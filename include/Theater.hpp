@@ -10,7 +10,6 @@
 
 
 #include "Performance.hpp"
-#include "Ticket.hpp"
 #include <functional>
 
 class Theater {

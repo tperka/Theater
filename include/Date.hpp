@@ -8,7 +8,7 @@
 #ifndef THEATER_DATE_HPP
 #define THEATER_DATE_HPP
 
-
+#include "Input.hpp"
 #include <iostream>
 #include <string>
 

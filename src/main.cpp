@@ -8,7 +8,6 @@
 
 #include <iostream>
 #include "Theater.hpp"
-#include "Ticket.hpp"
 using namespace std;
 
 int main() {
