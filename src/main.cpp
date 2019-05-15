@@ -5,9 +5,8 @@
  * Projekt: 9. Symulacja teatru
 **/
 
-
-#include <iostream>
 #include "Theater.hpp"
+
 using namespace std;
 
 int main() {
